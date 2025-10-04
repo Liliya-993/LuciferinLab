@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Грецькі Боги</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Merriweather", serif;
+            background: linear-gradient(to bottom, #1a2233, #0d0f12);
+            color: #f8f5ef; /* світліший перловий */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 80px;
+        }
+
+        .logo {
+            font-size: 72px;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .fade {
+            margin-top: 20px;
+            padding-bottom: 600px;
+            max-width: 900px;
+            text-align: center;
+            font-size: 30px;
+            color: #ddd;
+
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s ease-out;
+        }
+
+        .fade.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        p#last {
+            padding-bottom: 50px;
+        }
+
+        /* Сітка кнопок 2x2 */
+        .buttons-wrap {
+            margin: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            width: 900px; /* фіксована ширина для симетрії */
+        }
+
+        .choose-buttons-wrap {
+            margin: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 900px; /* фіксована ширина для симетрії */
+        }
+
+        .buttons-wrap a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e5e3dc;
+            background-color: #1a2233;
+            padding: 15px;
+            border-radius: 15px; /* заокруглені кути */
+            font-size: 20px;
+            font-weight: 600;
+            height: 100px;
+            transition: transform 0.5s ease;
+            text-decoration: none;
+        }
+
+        .choose-buttons-wrap a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e5e3dc;
+            background-color: #1a2233;
+            padding: 15px;
+            border-radius: 15px; /* заокруглені кути */
+            font-size: 20px;
+            font-weight: 600;
+            height: 100px;
+            transition: transform 0.5s ease;
+            text-decoration: none;
+        }
+
+        .buttons-wrap a:hover {
+            background-color: #d1cfc8;
+            transform: translateY(-4px);
+            color: #1a2233;
+        }
+
+        .choose-buttons-wrap a:hover {
+            background-color: #d1cfc8;
+            transform: translateY(-4px);
+            color: #1a2233;
+        }
+        .Up-to-top {
+            position: fixed;
+            width: 70px;
+            bottom: 30px;
+            right: 30px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .Up-to-top:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <body>
+        <!-- Головний блок -->
+        <main class="main">
+            <p class="fade">
+                Глибоко в безодні моря стоїть суворий палац великого брата
+                громовержця Зевса, землетрясця Посейдона. Панує над морями
+                Посейдон, і хвилі моря слухають найменьшого руху його руки,
+                озброєної грізним тризубцем. Там, у глибині моря, живе Посейдон
+                і його прекрасна дружина Амфітріта, дочка морського віщого
+                старця Нерея, яку викрав великий володар морської глибини
+                Посейдон в її батька. Одного разу він побачив, яа водила вона
+                танок із своїми сестрами нереїдами на березі острова Наксосу.
+                Захопився бог моря прекрасною Амфітрітою і хотів вивезти її на
+                своїй колісниці. Але Амфітріта заховалася в титана Атласа, який
+                тримає на своїх могутніх плечах небозвід. Нарешті, відкрив йому
+                її притулок дельфін; за цю послугу Посейдон помістив дельфіна
+                серед небесних сузір'їв. Посейдон викрав в Атласа прекрасну
+                дочку Нерея і одружився з нею.
+            </p>
+            <p class="fade">
+                З того часу Амфітрфда живе з чоловіком своїм Посейдоном у
+                підводному палаці. Високо надипалацом шумлять морські хвилі.
+                Сонм морських божеств оточує Посейдона, покірний його волі.
+                Серед них син Посейдона Тритон, який громовим звуком своєї сурми
+                з раковини викликає грізні бурі. Серед божеств і прекрасні
+                сестри Амфітріти, нереїди. Посейдон панує над морем. Коли він на
+                своїй колісниці, запряженій чудовими кіньми, мчить по морю, тоді
+                розступаються вічно шумливі хвилі і дають дорогу володареві
+                Посейдону. Рівний своєю вродою самому Зевсові, швидко мчить він
+                по безбережному морю, а навколо нього грають дельфіни, риби
+                випливають з морської глибини і товпляться навколо його
+                колісниці. Коли ж махне Посейдон своїм грізним тризубцем, тоді,
+                неначе гори, здіймаються морські хвилі, вкриті білими гребнями
+                піни, і бурхає на морі люта буря. Б'ються тоді з шумом морські
+                вали об прибережні скелі і стрясають землю. Але простягає
+                Посейдон свій тризубець над хвилями, і вони заспокоюються.
+                Вщухає буря, знову море спокійне, рівне, як дзеркало, і ледве
+                чутно плескочеться біля берега — синє, безкрає.
+            </p>
+            <p class="fade">
+                Багато божеств оточує великого Зевсового брата, Посейдона; серед
+                них віщий морський старець Нерей, який відає всі глибокі
+                таємниці майбутнього. Нереєві чужі неправда і обман; тільки
+                правду відкриває він богам і смертним. Мудрі ті поради, які дає
+                віщий старець. П'ятдесят прекрасних дочок у Нерея. Весело
+                хлюпочуться юні нереїди в хвилях моря, сяючи серед них своєю
+                божественною вродою. Побравшись за руки, випливають вони з
+                морської пучини і водять танок на березі під ласкавий плескіт
+                хвиль спокійного моря, що тихо набігають на берег. Луна
+                прибережних скель повторює тоді звуки їх ніжних співів подібних
+                до тихого рокоту моря. Нереїди охороняють мореплавця і дають
+                йому щасливе плавання.
+            </p>
+            <p class="fade">
+                Серед божеств моря і старець Протей, який змінює, неначе море,
+                свій образ і обертається за бажанням у різних тварин і потвор.
+                Він також віщий бог, треба тільки вміти захопити його
+                несподівано, оволодіти ним і примусити його відкрити таємницю
+                майбутнього. Серед супутників землетрясця Посейдона і бог Главк,
+                покровитель моряків та рибалок, і він має дір віщування. Часто,
+                випливаючи з глибини моря, відкривав він майбутнє і давав мудрі
+                поради смертним. Могутні боги моря, велика їх влада, але панує
+                над усіма ними великий брат Зевса Посейдон.
+            </p>
+            <p class="fade" id="last">
+                Усі моря і усі землі обтікає сивий Океан — бог-титан, рівний
+                Зевсові пошаною і славою. Він живе далеко на границях світу, і
+                не тривожать його серце справи землі. Три тисячі синів, річкових
+                богів, і три тисячі дочок Океанід, богинь струмків і джерел, має
+                Океан. Сини і дочки великого бога Океана дають благоденство і
+                радощі смертним своєю вічнорухливою живлющою водою, вони
+                напоюють нею всю землю і все живе.
+            </p>
+            <div>
+                <!--button class="Up-to-top" onclick="up"-->
+                <a href="#top"
+                    ><img
+                        class="Up-to-top"
+                        src="/images/Up-to-top.svg"
+                        onclick="scrollToTop(event)"
+                /></a>
+                <!--/button-->
+            </div>
+            <!-- Кнопки -->
+            <div class="buttons-wrap">
+                <a href="/Greek-Gods.html" class="shift-button"
+                    >Повернутися назад</a
+                >
+                <a href="/Mithology.html" class="shift-button"
+                    >Повернутися на головну</a
+                >
+            </div>
+        </main>
+        <script>
+            const paragraphs = document.querySelectorAll(".fade");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("show"); // показати
+                        } else {
+                            entry.target.classList.remove("show"); // сховати знову
+                        }
+                    });
+                },
+                { threshold: 0.3 }
+            );
+
+            paragraphs.forEach((p) => observer.observe(p));
+
+            function scrollToTop(event) {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+        </script>
+    </body>
+</html>
